@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Solution Responsive Grid] Media Queries</title>
+    <script src="https://kit.fontawesome.com/5dad897448.js" crossorigin="anonymous"></script>
+    <style>
+        @media screen and (max-width: 500px) {
+            .showcase-container {
+                grid-template-columns: repeat(2, 77px);
+                max-width: 300px;
+                grid-gap: 64px 32px;
+                justify-content: space-evenly;
+
+            }
+        }
+
+        @media screen and (min-width: 501px) {
+            .showcase-container {
+                grid-template-columns: repeat(3, 77px);
+                grid-gap: 64px 32px;
+                justify-content: space-evenly;
+            }
+        }
+
+        @media screen and (min-width: 800px) {
+            .showcase-container {
+                grid-template-columns: repeat(6, 77px);
+                grid-gap: 40px;
+                justify-content: space-between;
+                margin: 0 5rem;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h3 {
+            text-align: center;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 2rem 0;
+            padding-top: 2rem;
+            font-size: 2.2rem;
+        }
+
+        .wrapper {
+            background-color: black;
+            width: 100%;
+        }
+
+        .showcase-container {
+            margin: 0 auto;
+            display: grid;
+            align-items: center;
+            max-width: 960px;
+        }
+
+        .showcase-container img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h3>Empowering innovative brands</h3>
+        <div class="showcase-container"><img
+                src="https://cdn.sanity.io/images/599r6htc/production/8f5e0de117d8ae48121351a4dd1b91a6784a83df-77x77.svg?q=75&amp;fit=max&amp;auto=format"
+                class="css-7wh13m"><img
+                src="https://cdn.sanity.io/images/599r6htc/production/2218e3ca127e39e26892918e8749408e67b9cbde-77x77.svg?q=75&amp;fit=max&amp;auto=format"
+                class="css-7wh13m"><img
+                src="https://cdn.sanity.io/images/599r6htc/production/6ca2791b551f3302be33cf41c2ce58dd3924dc3d-77x77.svg?q=75&amp;fit=max&amp;auto=format"
+                class="css-7wh13m"><img
+                src="https://cdn.sanity.io/images/599r6htc/production/5f1418963f6e1ae0a58ad3076b4072a5d9fb35dc-77x77.svg?q=75&amp;fit=max&amp;auto=format"
+                class="css-7wh13m"><img
+                src="https://cdn.sanity.io/images/599r6htc/production/a248c880a228b091529274da0ba81bd707cb5f0e-77x77.svg?q=75&amp;fit=max&amp;auto=format"
+                class="css-7wh13m"><img
+                src="https://cdn.sanity.io/images/599r6htc/production/b4fcd29a8afd5541b04a4f73eef8fa5b78babeac-58x58.svg?q=75&amp;fit=max&amp;auto=format"
+                class="css-7wh13m"><img
+                src="https://cdn.sanity.io/images/599r6htc/production/636d573c1ec86f10b6732c529f71b236b4eeefc6-142x30.png?w=77&amp;h=16&amp;q=75&amp;fit=max&amp;auto=format"
+                srcset="https://cdn.sanity.io/images/599r6htc/production/636d573c1ec86f10b6732c529f71b236b4eeefc6-142x30.png?w=77&amp;q=75&amp;fit=max&amp;auto=format&amp;dpr=0.5 39w,https://cdn.sanity.io/images/599r6htc/production/636d573c1ec86f10b6732c529f71b236b4eeefc6-142x30.png?w=77&amp;q=75&amp;fit=max&amp;auto=format&amp;dpr=0.75 58w,https://cdn.sanity.io/images/599r6htc/production/636d573c1ec86f10b6732c529f71b236b4eeefc6-142x30.png?w=77&amp;q=75&amp;fit=max&amp;auto=format&amp;dpr=1 77w,https://cdn.sanity.io/images/599r6htc/production/636d573c1ec86f10b6732c529f71b236b4eeefc6-142x30.png?w=77&amp;q=75&amp;fit=max&amp;auto=format&amp;dpr=1.5 116w,https://cdn.sanity.io/images/599r6htc/production/636d573c1ec86f10b6732c529f71b236b4eeefc6-142x30.png?w=77&amp;q=75&amp;fit=max&amp;auto=format&amp;dpr=2 142w"
+                loading="lazy" class="css-7wh13m" alt="Coinbase Logo"><img
+                src="https://cdn.sanity.io/images/599r6htc/production/f4660f58b3a90ffd239c8b0d8d6ecb186686355b-77x77.svg?q=75&amp;fit=max&amp;auto=format"
+                class="css-7wh13m"><img
+                src="https://cdn.sanity.io/images/599r6htc/production/8defc22b15a8fba2467f4f35bfce91c7ee007b11-77x77.svg?q=75&amp;fit=max&amp;auto=format"
+                class="css-7wh13m"><img
+                src="https://cdn.sanity.io/images/599r6htc/production/6a8c5f217066168e07a8755b9f12f57ee9133914-77x77.svg?q=75&amp;fit=max&amp;auto=format"
+                class="css-7wh13m"><img
+                src="https://cdn.sanity.io/images/599r6htc/production/f6b7f65b31e00b5c3b23f50ba8ed57e4a613999d-77x77.svg?q=75&amp;fit=max&amp;auto=format"
+                class="css-7wh13m"><img
+                src="https://cdn.sanity.io/images/599r6htc/production/bd82fd9428bb5563032efe571de533093361dbd5-77x77.svg?q=75&amp;fit=max&amp;auto=format"
+                class="css-7wh13m">
+        </div>
+    </div>
+</body>
+
+</html>
